@@ -9,45 +9,71 @@
   <body>
     <header>
       <div class="logo-background">
-        <img src="" alt="" class="logo" />
-        <h1>Odin</h1>
-        <p>Photo by</p>
+        <img src="./img/logo.svg" alt="Sleeping cat" class="logo" />
+        <h1 class="logo-text">Cato</h1>
       </div>
+      <p class="credit-photo-text">Photo by : Johny Goerend</p>
     </header>
     <div class="side-section">
-      <p>
+      <p class="main-p">
         This is not a real online service! You know you need something like this
         in your life to help you realize your deepest dreams.
       </p>
-      <p>You know you want to.</p>
+      <p class="main-p2">Sign up now and get started!</p>
+      <p class="main-p3">You know you want to.</p>
       <form action="main-page.html" method="get" class="sign-up-form">
-        <h1>Let's do this!</h1>
-        <label for="first-name" class="input-label">FIRST NAME</label>
-        <input type="text" id="first-name" class="input" name="first-name" />
-        <label for="last-name">LAST NAME</label>
-        <input type="text" id="last-name" class="input" name="last-name" />
-        <label for="email">EMAIL</label>
-        <input type="email" id="email" class="input" name="email" />
-        <label for="phone-number">PHONE NUMBER</label>
-        <input
-          type="number"
-          id="phone-number"
-          class="input"
-          name="phone-number"
-        />
-        <label for="password">PASSWORD</label>
-        <input type="password" id="password" class="input" name="password" />
-        <label for="confirm-password">CONFIRM PASSWORD</label>
-        <input
-          type="password"
-          id="confirm-password"
-          class="input"
-          name="confirm-password"
-        />
+        <div class="inner-sign-up-form-container">
+          <p class="input-container">
+            <label for="first-name" class="input-label">FIRST NAME</label>
+            <input
+              type="text"
+              id="first-name"
+              class="input"
+              name="first-name"
+            />
+          </p>
+          <p class="input-container">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" class="input" name="last-name" />
+          </p>
+          <p class="input-container">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" class="input" name="email" />
+          </p>
+          <p class="input-container">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input
+              type="number"
+              id="phone-number"
+              class="input"
+              name="phone-number"
+            />
+          </p>
+          <p class="input-container">
+            <label for="password">PASSWORD</label>
+            <input
+              type="password"
+              id="password"
+              class="input"
+              name="password"
+            />
+          </p>
+          <p class="input-container">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              id="confirm-password"
+              class="input"
+              name="confirm-password"
+            />
+          </p>
+        </div>
       </form>
       <div class="button-holder">
         <button class="create-account-btn">Create account</button>
-        <p>Already have an accout? <span>Log in</span></p>
+        <p class="question-text">
+          Already have an accout? <span class="log-in-text">Log in</span>
+        </p>
       </div>
     </div>
   </body>
