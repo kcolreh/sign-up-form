@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Sign up</title>
-        <link rel="stylesheet" href="./style.css">
-        <script src="./java.js" defer></script>
-    </head>
-    <body>
-        <h1>Test</h1>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./java.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-background">
+        <img src="" alt="" class="logo" />
+        <h1>Odin</h1>
+        <p>Photo by</p>
+      </div>
+    </header>
+    <div class="side-section">
+      <p>
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams.
+      </p>
+      <p>You know you want to.</p>
+      <form action="main-page.html" method="get" class="sign-up-form">
+        <h1>Let's do this!</h1>
+        <label for="first-name" class="input-label">FIRST NAME</label>
+        <input type="text" id="first-name" class="input" name="first-name" />
+        <label for="last-name">LAST NAME</label>
+        <input type="text" id="last-name" class="input" name="last-name" />
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" class="input" name="email" />
+        <label for="phone-number">PHONE NUMBER</label>
+        <input
+          type="number"
+          id="phone-number"
+          class="input"
+          name="phone-number"
+        />
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" class="input" name="password" />
+        <label for="confirm-password">CONFIRM PASSWORD</label>
+        <input
+          type="password"
+          id="confirm-password"
+          class="input"
+          name="confirm-password"
+        />
+      </form>
+      <div class="button-holder">
+        <button class="create-account-btn">Create account</button>
+        <p>Already have an accout? <span>Log in</span></p>
+      </div>
+    </div>
+  </body>
 </html>
