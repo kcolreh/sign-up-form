@@ -30,15 +30,29 @@
               id="first-name"
               class="input first-name-focus"
               name="first-name"
+              autofocus
+              required
             />
           </p>
           <p class="input-container">
             <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" class="input" name="last-name" />
+            <input
+              type="text"
+              id="last-name"
+              class="input"
+              name="last-name"
+              required
+            />
           </p>
           <p class="input-container">
             <label for="email">EMAIL</label>
-            <input type="email" id="email" class="input" name="email" />
+            <input
+              type="email"
+              id="email"
+              class="input"
+              name="email"
+              required
+            />
           </p>
           <p class="input-container">
             <label for="phone-number">PHONE NUMBER</label>
@@ -47,6 +61,7 @@
               id="phone-number"
               class="input"
               name="phone-number"
+              required
             />
           </p>
           <p class="input-container">
@@ -56,6 +71,8 @@
               id="password"
               class="input error"
               name="password"
+              required
+              onchange="confirmPassword ()"
             />
           </p>
           <p class="input-container">
@@ -65,12 +82,16 @@
               id="confirm-password"
               class="input error"
               name="confirm-password"
+              title="Wrong Username"
+              required
+              onchange="confirmPassword ()"
             />
           </p>
         </div>
+        <p id="password-status" class="password-status"></p>
       </form>
       <div class="button-holder">
-        <button class="create-account-btn">Create account</button>
+        <button class="create-account-btn" type="submit">Create account</button>
         <p class="question-text">
           Already have an accout? <span class="log-in-text">Log in</span>
         </p>

@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: main-font;
-  src: url(./Fonts/Trispace/Trispace-VariableFont_wdth\,wght.ttf);
+  src: url(./Fonts/Space_Mono/SpaceMono-Regular.ttf);
 }
 
 *,
@@ -51,8 +51,8 @@ header {
 
 .side-section {
   height: 100vh;
-  width: 60vw;
-  margin-right: 10vw;
+  width: 40vw;
+  margin-right: 5vw;
   justify-content: center;
   background-color: var(--clr-neutral-200);
   font-family: main-font, sans-serif;
@@ -92,8 +92,8 @@ header {
 .main-p2,
 .main-p3 {
   margin: 0;
-  width: 80%;
-  padding-left: 2rem;
+  width: 90%;
+  padding-left: 3rem;
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.5;
@@ -112,14 +112,15 @@ header {
 .sign-up-form {
   background-color: var(--clr-neutral-white);
   box-shadow: 0 2px 3px var(--clr-neutral-grey);
-  padding: 2rem;
+  padding: 3rem;
   margin-top: 3rem;
 }
 
 .inner-sign-up-form-container {
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  justify-content: space-between;
+  width: 100%;
 }
 
 input,
@@ -129,23 +130,37 @@ label {
   line-height: 0.5;
 }
 
-label{
-    color: var(--clr-neutral-400);
+label {
+  color: var(--clr-neutral-400);
 }
 
 input {
   margin: 0.5rem;
-  border: 1px solid var(--clr-neutral-grey-full);
-  box-shadow: 1px 1px 1px var(--clr-neutral-grey-full);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border: 1px solid var(--clr-neutral-400);
+  font-family: main-font, sans-serif;
 }
 
-.error{
+.password-status {
+  text-align: center;
+  padding-left: 9px;
+  margin: 0;
+  color: var(--clr-invalid-red);
+}
+
+.input-container {
+  margin-right: 1rem;
+}
+
+.error {
   border: var(--clr-invalid-red) 1px solid;
 }
 
 .button-holder {
   background-color: transparent;
-  padding: 2rem;
+  padding: 3rem;
+  padding-top: 5rem;
 }
 
 .create-account-btn {
@@ -178,34 +193,41 @@ button:hover {
   cursor: pointer;
 }
 
-label:hover{
+button:active {
+  background-color: var(--clr-valid-green);
+  box-shadow: 5px 5px 25px var(--clr-valid-green);
+}
+
+label:hover {
   cursor: pointer;
 }
 
 input:hover {
-  color: var(--clr-neutral-activeBtn);
   border: 1px solid var(--clr-neutral-activeBtn);
-  box-shadow: 5px 5px 25px var(--clr-neutral-activeBtnShadow);
   cursor: pointer;
 }
 
-.error:hover {
-  box-shadow: 5px 5px 25px var(--clr-invalid-red);
-  border: 1px solid var(--clr-invalid-red);
+input:focus {
+  border: var(--clr-neutral-400) 1.5px solid;
+}
+
+.error:active:invalid,
+.error:focus:invalid,
+.error:hover:invalid {
   cursor: pointer;
+}
+
+.error:hover:invalid,
+.error:hover:invalid {
+  border: 1px solid var(--clr-invalid-red);
+  box-shadow: 1px 1px 6px var(--clr-invalid-red);
 }
 
 .log-in-text:hover {
   color: var(--clr-neutral-activeBtn);
-  box-shadow: 5px 5px 25px var(--clr-neutral-activeBtnShadow);
   cursor: pointer;
 }
 
-.first-name-focus{
-  border: var(--clr-neutral-400) 2px solid;
+.log-in-text:active {
+  color: var(--clr-valid-green);
 }
-.first-name-focus:hover{
-    border: 2px solid var(--clr-neutral-400);
-    box-shadow: 5px 5px 25px var(--clr-neutral-400);
-    cursor: pointer;
-  }
