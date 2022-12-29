@@ -4,7 +4,7 @@ function confirmPassword() {
     const password = document.getElementById('password').value;
     const password2 = document.getElementById('confirm-password').value;
     let passwordStatus = document.getElementById('password-status');
-   
+
     if (password === '') {
         passwordStatus.style = 'color: red';
         passwordStatus.textContent = 'Please enter matching passwords';

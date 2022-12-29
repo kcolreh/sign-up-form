@@ -58,6 +58,7 @@ header {
   font-family: main-font, sans-serif;
   letter-spacing: 0.01em;
   line-height: 1;
+  border-right: 1px solid var(--clr-neutral-grey);
 }
 
 /*Header-left*/
@@ -198,6 +199,10 @@ button:active {
   box-shadow: 5px 5px 25px var(--clr-valid-green);
 }
 
+label {
+  margin-left: 0.5rem;
+}
+
 label:hover {
   cursor: pointer;
 }
@@ -208,19 +213,20 @@ input:hover {
 }
 
 input:focus {
-  border: var(--clr-neutral-400) 1.5px solid;
+  border: var(--clr-neutral-400) 1px solid;
+  outline: var(--clr-neutral-400) 1px solid;
+}
+
+.input-non-password:valid {
+  border: 1px solid var(--clr-valid-green);
 }
 
 .error:active:invalid,
 .error:focus:invalid,
 .error:hover:invalid {
   cursor: pointer;
-}
-
-.error:hover:invalid,
-.error:hover:invalid {
-  border: 1px solid var(--clr-invalid-red);
-  box-shadow: 1px 1px 6px var(--clr-invalid-red);
+  border: var(--clr-invalid-red) 1px solid;
+  outline: var(--clr-invalid-red) 1px solid;
 }
 
 .log-in-text:hover {
